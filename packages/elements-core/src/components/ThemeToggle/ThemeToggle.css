@@ -1,0 +1,59 @@
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid currentColor !important;
+    background-color: transparent !important;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    padding: 0 !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(137, 180, 250, 0.3);
+}
+
+#theme-toggle svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    stroke-width: 2;
+    transition: transform 0.5s ease;
+}
+
+#theme-toggle:hover svg {
+    transform: rotate(45deg);
+}
+
+[data-theme='light'] #theme-toggle {
+    color: #0f172a !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+[data-theme='dark'] #theme-toggle {
+    color: #cdd6f4 !important;
+    background-color: rgba(49, 50, 68, 0.8) !important;
+}
+
+/* Animation for icons */
+.sun, .moon {
+    transition: transform 0.5s ease;
+}
+
+#theme-toggle:hover .sun {
+    transform: rotate(180deg);
+}
+
+#theme-toggle:hover .moon {
+    transform: rotate(-180deg);
+} 
