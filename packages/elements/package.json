@@ -1,7 +1,7 @@
 {
-  "name": "@stoplight/elements",
-  "version": "9.0.0",
-  "description": "UI components for composing beautiful developer documentation.",
+  "name": "apistorm",
+  "version": "1.0.1",
+  "description": "Beautiful API Documentation System",
   "keywords": [],
   "sideEffects": [
     "web-components.min.js",
